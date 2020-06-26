@@ -1,8 +1,45 @@
+%headerMobile {
+	font-weight: 700;
+	font-size: 28px;
+	line-height: 1.17;
+	text-align: center;
+}
+
 %header {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;
 	text-align: center;
+}
+
+%sectionPaddingsMobile {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+// %sectionPaddings {
+// 	padding-top: 94px;
+// 	padding-bottom: 94px;
+// }
+
+%button {
+	min-width: 200px;
+
+	font-size: 16px;
+	line-height: 1.88;
+	font-weight: 700;
+	letter-spacing: 0.06em;
+	color: $accentWhiteColor;
+	background-color: $accentBlueColor;
+	border-radius: $borderRadius;
+	border: $border;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+%button-hover {
+	background-color: $buttonHoverColor;
+	outline: none;
+	border: 1px solid $accentWhiteColor;
 }
 
 %teamText {
@@ -12,24 +49,8 @@
 }
 
 %footerAdress {
-	display: block;
-	width: 100%;
-
-	font-size: 14px;
 	line-height: 1.71;
 	font-style: normal;
-	letter-spacing: $letterSpacing;
-}
-
-%button-hover {
-	background-color: $buttonHoverColor;
-	outline: none;
-	border: 1px solid $accentWhiteColor;
-}
-
-%sectionPaddings {
-	padding-top: 94px;
-	padding-bottom: 94px;
 }
 
 %titleTransperent {

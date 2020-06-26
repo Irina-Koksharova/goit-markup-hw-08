@@ -1,9 +1,9 @@
 .adress-block {
-	width: calc(25%);
+	margin-bottom: 60px;
 }
 
 .adress-item:not(:last-child) {
-	margin-bottom: 9px;
+	margin-bottom: 8px;
 }
 
 .adress-link {
@@ -11,10 +11,6 @@
 	color: $accentWhiteColor;
 
 	transition: color $transition, outline $transition;
-
-	&:hover {
-		color: $accentBlueColor;
-	}
 
 	&:focus {
 		outline: $focusOutlineWhite;

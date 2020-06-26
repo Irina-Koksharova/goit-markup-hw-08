@@ -1,9 +1,9 @@
 .footer {
-	padding-top: 60px;
-	padding-bottom: 60px;
+	@extend %sectionPaddingsMobile;
 	background-color: $footerBackgroundColor;
 }
 
 .footer-flex {
-	@include flex(flex-start, baseline);
+	display: block;
+	text-align: center;
 }

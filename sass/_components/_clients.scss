@@ -1,25 +1,31 @@
 .section-clients {
-	@extend %sectionPaddings;
+	@extend %sectionPaddingsMobile;
 }
 
 .clients {
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 
-	@extend %header;
-	letter-spacing: $letterSpacing;
+	@extend %headerMobile;
 	color: $secondaryTextColor;
 }
 
 .clients-flex {
 	@include flex(center, center);
+	flex-wrap: wrap;
 }
 
 .clients-item {
-	width: calc((100% - 5 * 30px) / 6);
+	width: calc((100% - 1 * 30px) / 2);
 	height: 90px;
 
-	&:not(:last-child) {
+	margin-bottom: 30px;
+
+	&:nth-child(2n + 1) {
 		margin-right: 30px;
+	}
+
+	&:nth-last-child(-n + 2) {
+		margin-bottom: 0px;
 	}
 }
 

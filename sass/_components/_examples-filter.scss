@@ -1,7 +1,7 @@
 .section-examples {
 	border-top: $borderExamples;
 
-	@extend %sectionPaddings;
+	@extend %sectionPaddingsMobile;
 }
 
 .examples {
@@ -9,12 +9,17 @@
 }
 
 .filter {
-	@include flex(center, center);
-	margin-bottom: 50px;
+	@include flex(flex-start, center);
+	flex-wrap: wrap;
+	margin-bottom: 40px;
 }
 
-.filter-item:not(:last-child) {
-	margin-right: 8px;
+.filter-item {
+	margin-bottom: 15px;
+
+	&:not(:last-child) {
+		margin-right: 8px;
+	}
 }
 
 .button {
@@ -25,7 +30,6 @@
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 1.63;
-	letter-spacing: $letterSpacing;
 	color: $secondaryTextColor;
 	background-color: $benefitsBackgroundColor;
 	border-radius: $borderRadius;
