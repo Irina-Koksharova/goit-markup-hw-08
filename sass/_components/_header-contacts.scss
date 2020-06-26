@@ -1,0 +1,41 @@
+.contacts {
+	@include flex(flex-start, center);
+	margin-left: auto;
+}
+
+.contacts-item:not(:last-child) {
+	margin-right: 30px;
+}
+
+.contacts-link {
+	@include flex(flex-start, center);
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	color: $primaryTextColor;
+
+	transition: color $transition, outline $transition;
+
+	&:hover {
+		color: $accentBlueColor;
+	}
+	&:focus {
+		outline: $focusOutlineBlue;
+	}
+
+	&:hover .contacts-image {
+		fill: $accentBlueColor;
+	}
+}
+
+.contacts-image {
+	margin-right: 10px;
+
+	fill: $primaryTextColor;
+
+	transition: fill $transition;
+}

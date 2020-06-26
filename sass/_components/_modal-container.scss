@@ -1,0 +1,113 @@
+.modal-conteiner {
+	padding: 40px;
+}
+
+.modal-text {
+	margin-top: 0;
+	margin-bottom: 30px;
+
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.15;
+	left: $letterSpacing;
+	color: $secondaryTextColor;
+	text-align: center;
+}
+
+.modal-item {
+	position: relative;
+
+	margin-bottom: 0px;
+
+	&:not(:last-child) {
+		margin-bottom: 28px;
+	}
+}
+
+.modal-input {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 42px;
+	padding-right: 16px;
+	width: 100%;
+
+	transition: border $transition;
+
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: $borderRadius;
+
+	&:hover,
+	&:focus {
+		border: 1px solid $accentBlueColor;
+		outline: none;
+	}
+
+	&:hover + .modal-label,
+	&:focus + .modal-label {
+		transform: translate(-24px, -290%);
+
+		color: $accentBlueColor;
+	}
+
+	&:hover ~ .modal-icon,
+	&:focus ~ .modal-icon {
+		fill: $accentBlueColor;
+	}
+}
+
+.modal-label {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 42px;
+
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.01em;
+
+	transition: color $transition, transform $transition;
+}
+
+.modal-icon {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 16px;
+
+	transition: fill $transition;
+}
+
+.modal-comment {
+	padding: 12px 16px;
+	width: 100%;
+
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: $borderRadius;
+	resize: none;
+
+	transition: border $transition;
+
+	&:hover,
+	&:focus {
+		border: 1px solid $accentBlueColor;
+		outline: none;
+	}
+
+	&:hover + .modal-comment-label,
+	&:focus + .modal-comment-label {
+		color: $accentBlueColor;
+		transform: translateY(-230%);
+	}
+}
+
+.modal-comment-label {
+	position: absolute;
+	top: 12px;
+	left: 16px;
+
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.01em;
+
+	transition: color $transition, transform $transition;
+}

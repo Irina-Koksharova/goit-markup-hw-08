@@ -1,0 +1,27 @@
+.adress-block {
+	width: calc(25%);
+}
+
+.adress-item:not(:last-child) {
+	margin-bottom: 9px;
+}
+
+.adress-link {
+	@extend %footerAdress;
+	color: $accentWhiteColor;
+
+	transition: color $transition, outline $transition;
+
+	&:hover {
+		color: $accentBlueColor;
+	}
+
+	&:focus {
+		outline: $focusOutlineWhite;
+	}
+}
+
+.footer-contacts {
+	@extend %footerAdress;
+	color: $footerGreyColor;
+}

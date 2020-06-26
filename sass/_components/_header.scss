@@ -1,0 +1,4 @@
+.header-flex {
+	@include flex(flex-start, stretch);
+	min-height: 80px;
+}

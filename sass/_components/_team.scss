@@ -1,0 +1,93 @@
+.team {
+	@extend %sectionPaddings;
+
+	background-color: $benefitsBackgroundColor;
+}
+
+.team-title {
+	margin-bottom: 50px;
+
+	@extend %header;
+	letter-spacing: $letterSpacing;
+	color: $secondaryTextColor;
+}
+
+.team-flex {
+	@include flex(flex-start, stretch);
+}
+
+.team-item {
+	width: calc((100% - 3 * 30px) / 4);
+
+	background-color: $accentWhiteColor;
+	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+	border-radius: 0px 0px 4px 4px;
+
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
+}
+
+.team-subtitle {
+	margin-top: 30px;
+	margin-bottom: 10px;
+
+	@extend %teamText;
+	font-weight: 500;
+	letter-spacing: $letterSpacing;
+
+	color: $secondaryTextColor;
+}
+
+.team-text {
+	margin-top: 0;
+	margin-bottom: 16px;
+
+	@extend %teamText;
+	letter-spacing: $letterSpacing;
+}
+
+.team-sl {
+	@include flex(center, stretch);
+	margin-right: 32px;
+	margin-left: 32px;
+	margin-bottom: 24px;
+}
+
+.item-links {
+	width: 44px;
+	height: 44px;
+
+	&:not(:last-child) {
+		margin-right: 10px;
+	}
+}
+
+.t-links {
+	@include flex(center, center);
+	height: 100%;
+
+	border-radius: 50%;
+
+	transition: background-color $transition, outline $transition;
+
+	&:hover {
+		background-color: $accentBlueColor;
+	}
+
+	&:focus {
+		background-color: $accentBlueColor;
+		outline: $focusOutlineBlue;
+	}
+
+	&:hover .team-social,
+	&:focus .team-social {
+		fill: $accentWhiteColor;
+	}
+}
+
+.team-social {
+	fill: $solalLinkColor;
+
+	transition: fill $transition;
+}

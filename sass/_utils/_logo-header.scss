@@ -1,0 +1,27 @@
+.logo-header {
+	padding-top: 24px;
+	padding-bottom: 25px;
+	margin-right: 85px;
+
+	font-family: $secondaryFontFamily;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: $letterSpacing;
+
+	transition: outline $transition;
+
+	&:focus {
+		outline: $focusOutlineBlue;
+	}
+}
+
+.logo-parth-one {
+	color: $accentBlueColor;
+}
+
+.logo-parth-two {
+	color: $secondaryTextColor;
+
+	transition: color $transition;
+}

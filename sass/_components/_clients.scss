@@ -1,0 +1,53 @@
+.section-clients {
+	@extend %sectionPaddings;
+}
+
+.clients {
+	margin-bottom: 50px;
+
+	@extend %header;
+	letter-spacing: $letterSpacing;
+	color: $secondaryTextColor;
+}
+
+.clients-flex {
+	@include flex(center, center);
+}
+
+.clients-item {
+	width: calc((100% - 5 * 30px) / 6);
+	height: 90px;
+
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
+}
+
+.link-item {
+	@include flex(center, center);
+	height: 100%;
+
+	border: 1px solid $solalLinkColor;
+	border-radius: $borderRadius;
+
+	transition: border $transition, outline $transition;
+
+	&:hover {
+		border: 1px solid $accentBlueColor;
+	}
+
+	&:focus {
+		outline: $focusOutlineBlue;
+	}
+
+	&:hover .clients-logo,
+	&:focus .clients-logo {
+		fill: $accentBlueColor;
+	}
+}
+
+.clients-logo {
+	fill: $solalLinkColor;
+
+	transition: fill $transition;
+}

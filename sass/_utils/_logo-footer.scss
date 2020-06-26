@@ -1,0 +1,26 @@
+.logo-footer {
+	display: block;
+	margin-bottom: 20px;
+
+	font-family: $secondaryFontFamily;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	letter-spacing: $letterSpacing;
+
+	transition: outline $transition;
+
+	&:focus {
+		outline: $focusOutlineWhite;
+	}
+}
+
+.logo-parth-one {
+	color: $accentBlueColor;
+}
+
+.logo-parth-three {
+	color: $accentWhiteColor;
+
+	transition: color $transition;
+}

@@ -1,0 +1,39 @@
+%header {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.17;
+	text-align: center;
+}
+
+%teamText {
+	font-size: 16px;
+	line-height: 1.19;
+	text-align: center;
+}
+
+%footerAdress {
+	display: block;
+	width: 100%;
+
+	font-size: 14px;
+	line-height: 1.71;
+	font-style: normal;
+	letter-spacing: $letterSpacing;
+}
+
+%button-hover {
+	background-color: $buttonHoverColor;
+	outline: none;
+	border: 1px solid $accentWhiteColor;
+}
+
+%sectionPaddings {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+
+%titleTransperent {
+	margin-bottom: 0;
+	position: absolute;
+	color: transparent;
+}

@@ -1,0 +1,74 @@
+.backdrop-policy {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.backdrop-check {
+	margin-right: 7px;
+	appearance: none;
+
+	&:checked + .backdrop-label-check::before {
+		background-image: url(../images/full-check.svg);
+		background-color: $accentBlueColor;
+
+		background-position: 50% 50%;
+		border-radius: 2px;
+		border: 1px solid $accentBlueColor;
+	}
+}
+
+.backdrop-label-check {
+	position: relative;
+
+	font-size: 14px;
+	left: 1.71;
+	letter-spacing: $letterSpacing;
+}
+
+.backdrop-label-check::before {
+	position: absolute;
+	top: 0;
+	left: -20px;
+	content: "";
+	width: 16px;
+	height: 15px;
+
+	border: 1px solid $secondaryTextColor;
+	border-radius: 2px;
+}
+
+.backdrop-link {
+	font-size: 14px;
+	left: 1.71;
+	letter-spacing: $letterSpacing;
+	color: $accentBlueColor;
+	text-decoration: underline;
+}
+
+.backdrop-button {
+	display: block;
+	margin: 0 auto 0 auto;
+	padding: 10px 55px 10px 56px;
+	min-width: 200px;
+
+	color: $accentWhiteColor;
+	background-color: $accentBlueColor;
+	border-radius: $borderRadius;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	font-size: 16px;
+	line-height: 1.88;
+	letter-spacing: 0.06em;
+	border: $border;
+
+	transition: border $transition, background-color $transition;
+
+	&:hover,
+	&:focus {
+		@extend %button-hover;
+	}
+}
+
+.backdrop-link:focus {
+	outline: none;
+}

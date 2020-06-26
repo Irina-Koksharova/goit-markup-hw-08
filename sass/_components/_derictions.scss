@@ -1,0 +1,42 @@
+.directions {
+	padding-bottom: 94px;
+}
+
+.directions-title {
+	margin-bottom: 50px;
+
+	@extend %header;
+	letter-spacing: $letterSpacing;
+	color: $secondaryTextColor;
+}
+
+.direction-flex {
+	@include flex(flex-start, stretch);
+}
+
+.directions-item {
+	position: relative;
+	width: calc((100% - 2 * 30px) / 3);
+
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
+}
+
+.directions-subtitle {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	padding-top: 27px;
+	padding-bottom: 27px;
+	margin-bottom: 0;
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-align: center;
+	letter-spacing: $letterSpacing;
+	color: $accentWhiteColor;
+	text-transform: uppercase;
+	background-color: $directionsBackgroundColor;
+}

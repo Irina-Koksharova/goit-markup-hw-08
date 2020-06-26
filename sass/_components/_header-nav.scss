@@ -1,0 +1,48 @@
+.nav {
+	@include flex(flex-start, stretch);
+
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	color: $secondaryTextColor;
+}
+
+.nav-item:not(:last-child) {
+	margin-right: 50px;
+}
+
+.nave-page {
+	display: block;
+	padding-top: 32px;
+	padding-bottom: 32px;
+
+	color: $secondaryTextColor;
+
+	transition: color $transition, outline $transition;
+
+	&:hover,
+	&:focus {
+		color: $accentBlueColor;
+	}
+
+	&:focus {
+		outline: $focusOutlineBlue;
+	}
+}
+
+.current {
+	position: relative;
+	color: $accentBlueColor;
+
+	&::after {
+		position: absolute;
+		bottom: 0;
+		content: "";
+		display: block;
+		width: 100%;
+		height: 4px;
+		background-color: $accentBlueColor;
+		border-radius: 2px;
+	}
+}
