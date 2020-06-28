@@ -47,7 +47,7 @@
 	}
 
 	@media screen and (min-width: 1200px) {
-		min-width: 1200px;
+		max-width: 1600px;
 		min-height: 600px;
 		background-image: linear-gradient(to right, $heroBackgroundShadow, $heroBackgroundShadow),
 			url(../images/header-img-1200.jpg);
