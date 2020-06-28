@@ -6,14 +6,49 @@
 	@extend %titleTransperent;
 }
 
-.benefits-box:not(:last-child) {
-	margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+	.benefits-box:not(:last-child) {
+		margin-bottom: 30px;
+	}
+}
+
+@media screen and (min-width: $tablet) {
+	.benefits-flex {
+		@include flex(flex-start, stretch);
+		flex-wrap: wrap;
+	}
+
+	.benefits-box {
+		width: calc((100% - 30px) / 2);
+
+		margin-right: 30px;
+		margin-bottom: 30px;
+
+		&:nth-child(2n) {
+			margin-right: 0px;
+		}
+
+		&:nth-last-child(-n + 2) {
+			margin-bottom: 0px;
+		}
+	}
+}
+
+@media screen and (min-width: $desctop) {
+	.benefits-box {
+		width: calc((100% - 3 * 30px) / 4);
+		margin-bottom: 0;
+
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
+	}
 }
 
 .benefits-link {
 	@include flex(center, center);
 	width: 100%;
-	height: 120px;
+	min-height: 120px;
 	margin-bottom: 30px;
 
 	background-color: $benefitsBackgroundColor;
