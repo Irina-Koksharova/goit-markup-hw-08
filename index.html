@@ -134,17 +134,58 @@
 					<h2 class="directions-title">Чем мы занимаемся</h2>
 					<ul class="direction-flex">
 						<li class="directions-item">
-							<img class="items" src="./images/desc-appic.jpg" alt="Ноутбук" width="370" />
+							<picture>
+								<source
+									srcset="
+										./images/desctop-370.webp   370w,
+										./images/desctop-740.webp   740w,
+										./images/desctop-1110.webp 1110w
+									"
+									type="image/webp"
+								/>
+								<img
+									srcset="./images/desctop-370.jpg 370w, ./images/desctop-740.jpg 740w, ./images/desctop-1110.jpg 1110w"
+									src="./images/desctop-370.jpg"
+									sizes="370px"
+									alt="Ноутбук"
+								/>
+							</picture>
 							<h3 class="directions-subtitle">Десктопные приложения</h3>
 						</li>
 
 						<li class="directions-item">
-							<img class="items" src="./images/tel.jpg" alt="Мобильный телефон" width="370" />
+							<picture>
+								<source
+									srcset="./images/mobile-370.webp 370w, ./images/mobile-740.webp 740w, ./images/mobile-1110.webp 1110w"
+									type="image/webp"
+								/>
+								<img
+									srcset="./images/mobile-370.jpg 370w, ./images/mobile-740.jpg 740w, ./images/mobile-1110.jpg 1110w"
+									src="./images/mobile-370.jpg"
+									sizes="370px"
+									alt="Мобильный телефон"
+								/>
+							</picture>
 							<h3 class="directions-subtitle">Мобильные приложения</h3>
 						</li>
 
 						<li class="directions-item">
-							<img class="items" src="./images/monitor.jpg" alt="Монитор копьютера" width="370" />
+							<picture>
+								<source
+									srcset="
+										./images/monitor-370.webp   370w,
+										./images/monitor-740.webp   740w,
+										./images/monitor-1110.webp 1110w
+									"
+									type="image/webp"
+								/>
+								<img
+									srcset="./images/monitor-370.jpg 370w, ./images/monitor-740.jpg 740w, ./images/monitor-1110.jpg 1110w"
+									src="./images/monitor-370.jpg"
+									sizes="370px"
+									alt="Монитор компьютера"
+								/>
+							</picture>
 							<h3 class="directions-subtitle">Дизайнерские решения</h3>
 						</li>
 					</ul>
@@ -197,8 +238,8 @@
 										./images/kucherenko-1350.jpg 1350w
 									"
 									src="./images/kucherenko-450.jpg"
+									sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
 									alt="Николай Кучеренко"
-									sizes="100vw, (min-width: 768px) 50vw, (min-width: 1200px) 25vw"
 								/>
 							</picture>
 
@@ -273,8 +314,8 @@
 										./images/ivanova-1350.jpg 1350w
 									"
 									src="./images/ivanova-450.jpg"
+									sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
 									alt="Ольга Иванова"
-									sizes="100vw, (min-width: 768px) 50vw, (min-width: 1200px) 25vw"
 								/>
 							</picture>
 							<h3 class="team-subtitle">Ольга Иванова</h3>
@@ -352,8 +393,8 @@
 										./images/shevchenko-1350.jpg 1350w
 									"
 									src="./images/shevchenko-450.jpg"
+									sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
 									alt="Андрей Шевченко"
-									sizes="100vw, (min-width: 768px) 50vw, (min-width: 1200px) 25vw"
 								/>
 							</picture>
 							<h3 class="team-subtitle">Андрей Шевченко</h3>
@@ -431,8 +472,8 @@
 										./images/nikolaev-1350.jpg 1350w
 									"
 									src="./images/nikolaev-450.jpg"
+									sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
 									alt="Иван Николаев"
-									sizes="100vw, (min-width: 768px) 50vw, (min-width: 1200px) 25vw"
 								/>
 							</picture>
 							<h3 class="team-subtitle">Иван Николаев</h3>

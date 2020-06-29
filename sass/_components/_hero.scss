@@ -8,41 +8,41 @@
 
 	background-color: $heroBackgroundColor;
 	background-image: linear-gradient(to right, $heroBackgroundShadow, $heroBackgroundShadow),
-		url(../images/header-img-480.jpg);
+		url(../images/header-480.jpg);
 	background-size: cover;
 
 	@media screen and (min-device-pixel-ratio: 2),
 		screen and (min-resolution: 192dpi),
 		screen and (min-resolution: 2dppx) {
 		background-image: linear-gradient(to right, $heroBackgroundShadow, $heroBackgroundShadow),
-			url(../images/header-img-480@2x.jpg);
+			url(../images/header-960.jpg);
 	}
 
 	@media screen and (min-device-pixel-ratio: 3),
 		screen and (min-resolution: 288dpi),
 		screen and (min-resolution: 3dppx) {
 		background-image: linear-gradient(to right, $heroBackgroundShadow, $heroBackgroundShadow),
-			url(../images/header-img-480@3x.jpg);
+			url(../images/header-1440.jpg);
 	}
 
 	@media screen and (min-width: 768px) and (max-width: 1199px) {
 		min-width: 768px;
 		background-image: linear-gradient(to right, $heroBackgroundShadow, $heroBackgroundShadow),
-			url(../images/header-img-768.jpg);
+			url(../images/header-768.jpg);
 		background-size: cover;
 
 		@media screen and (min-device-pixel-ratio: 2),
 			screen and (min-resolution: 192dpi),
 			screen and (min-resolution: 2dppx) {
 			background-image: linear-gradient(to right, $heroBackgroundShadow, $heroBackgroundShadow),
-				url(../images/header-img-768@2x.jpg);
+				url(../images/header-1536.jpg);
 		}
 
 		@media screen and (min-device-pixel-ratio: 3),
 			screen and (min-resolution: 288dpi),
 			screen and (min-resolution: 3dppx) {
 			background-image: linear-gradient(to right, $heroBackgroundShadow, $heroBackgroundShadow),
-				url(../images/header-img-768@3x.jpg);
+				url(../images/header-2304.jpg);
 		}
 	}
 
@@ -50,21 +50,21 @@
 		max-width: 1600px;
 		min-height: 600px;
 		background-image: linear-gradient(to right, $heroBackgroundShadow, $heroBackgroundShadow),
-			url(../images/header-img-1200.jpg);
+			url(../images/header-1200.jpg);
 		background-size: cover;
 
 		@media screen and (min-device-pixel-ratio: 2),
 			screen and (min-resolution: 192dpi),
 			screen and (min-resolution: 2dppx) {
 			background-image: linear-gradient(to right, $heroBackgroundShadow, $heroBackgroundShadow),
-				url(../images/header-img-1200@2x.jpg);
+				url(../images/header-2400.jpg);
 		}
 
 		@media screen and (min-device-pixel-ratio: 3),
 			screen and (min-resolution: 288dpi),
 			screen and (min-resolution: 3dppx) {
 			background-image: linear-gradient(to right, $heroBackgroundShadow, $heroBackgroundShadow),
-				url(../images/header-img-1200@3x.jpg);
+				url(../images/header-3600.jpg);
 		}
 	}
 }
