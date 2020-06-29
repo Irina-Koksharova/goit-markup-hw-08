@@ -24,38 +24,45 @@
 					<span class="logo-parth-two">Studio</span>
 				</a>
 
-				<nav>
-					<ul class="nav">
-						<li class="nav-item">
-							<a class="nave-page current" href="./index.html">Студия</a>
-						</li>
-						<li class="nav-item">
-							<a class="nave-page" href="./portfolio.html">Портфолио</a>
-						</li>
-						<li class="nav-item">
-							<a class="nave-page" href="">Контакты</a>
-						</li>
-					</ul>
+				<nav class="nav">
+					<button class="nav-button is-open" type="button" data-menu-button>
+						<svg class="nav-icon" aria-label="Переключатель мобильного меню" width="40px" height="40px">
+							<use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
+							<use class="icon-menu-close" href="./images/symbol-defs.svg#icon-menu-close"></use>
+						</svg>
+					</button>
+					<div class="nav-menu is-open" data-menu>
+						<ul class="nav-list">
+							<li class="nav-item">
+								<a class="nave-page current" href="./index.html">Студия</a>
+							</li>
+							<li class="nav-item">
+								<a class="nave-page" href="./portfolio.html">Портфолио</a>
+							</li>
+							<li class="nav-item">
+								<a class="nave-page" href="">Контакты</a>
+							</li>
+						</ul>
+						<ul class="contacts">
+							<li class="contacts-item">
+								<a class="contacts-link" href="mailto:info@devstudio.com">
+									<svg class="contacts-image" width="16px" height="12px">
+										<use href="./images/symbol-defs.svg#icon-mailto"></use>
+									</svg>
+									info@devstudio.com
+								</a>
+							</li>
+							<li class="contacts-item">
+								<a class="contacts-link" href="tel:+380961111111">
+									<svg class="contacts-image" width="10px" height="15px">
+										<use href="./images/symbol-defs.svg#icon-telephone"></use>
+									</svg>
+									+38 096 111 11 11
+								</a>
+							</li>
+						</ul>
+					</div>
 				</nav>
-
-				<ul class="contacts">
-					<li class="contacts-item">
-						<a class="contacts-link" href="mailto:info@devstudio.com">
-							<svg class="contacts-image" width="16px" height="12px">
-								<use href="./images/symbol-defs.svg#icon-mailto"></use>
-							</svg>
-							info@devstudio.com
-						</a>
-					</li>
-					<li class="contacts-item">
-						<a class="contacts-link" href="tel:+380961111111">
-							<svg class="contacts-image" width="10px" height="15px">
-								<use href="./images/symbol-defs.svg#icon-telephone"></use>
-							</svg>
-							+38 096 111 11 11
-						</a>
-					</li>
-				</ul>
 			</div>
 		</header>
 
@@ -142,6 +149,7 @@
 										./images/desctop-1110.webp 1110w
 									"
 									type="image/webp"
+									sizes="370px"
 								/>
 								<img
 									srcset="./images/desctop-370.jpg 370w, ./images/desctop-740.jpg 740w, ./images/desctop-1110.jpg 1110w"
@@ -158,6 +166,7 @@
 								<source
 									srcset="./images/mobile-370.webp 370w, ./images/mobile-740.webp 740w, ./images/mobile-1110.webp 1110w"
 									type="image/webp"
+									sizes="370px"
 								/>
 								<img
 									srcset="./images/mobile-370.jpg 370w, ./images/mobile-740.jpg 740w, ./images/mobile-1110.jpg 1110w"
@@ -178,6 +187,7 @@
 										./images/monitor-1110.webp 1110w
 									"
 									type="image/webp"
+									sizes="370px"
 								/>
 								<img
 									srcset="./images/monitor-370.jpg 370w, ./images/monitor-740.jpg 740w, ./images/monitor-1110.jpg 1110w"
@@ -207,6 +217,7 @@
 									"
 									type="image/webp"
 									media="(max-width: 1199px)"
+									sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
 								/>
 								<source
 									srcset="
@@ -216,17 +227,20 @@
 									"
 									type="image/jpg"
 									media="(max-width: 1199px)"
+									sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
 								/>
 
 								<source
 									srcset="./images/kucherenko-540.webp 540w, ./images/kucherenko-810.webp 810w"
 									type="image/webp"
 									media="(min-width: 1200px)"
+									sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
 								/>
 								<source
 									srcset="./images/kucherenko-540.jpg 540w, ./images/kucherenko-810.jpg 810w"
 									type="image/jpg"
 									media="(min-width: 1200px)"
+									sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
 								/>
 
 								<img
@@ -287,22 +301,26 @@
 									"
 									type="image/webp"
 									media="(max-width: 1199px)"
+									sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
 								/>
 								<source
 									srcset="./images/ivanova-450.jpg 450w, ./images/ivanova-900.jpg 900w, ./images/ivanova-1350.jpg 1350w"
 									type="image/jpg"
 									media="(max-width: 1199px)"
+									sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
 								/>
 
 								<source
 									srcset="./images/ivanova-540.webp 540w, ./images/ivanova-810.webp 810w"
 									type="image/webp"
 									media="(min-width: 1200px)"
+									sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
 								/>
 								<source
 									srcset="./images/ivanova-540.jpg 540w, ./images/ivanova-810.jpg 810w"
 									type="image/jpg"
 									media="(min-width: 1200px)"
+									sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
 								/>
 
 								<img
@@ -362,6 +380,7 @@
 									"
 									type="image/webp"
 									media="(max-width: 1199px)"
+									sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
 								/>
 								<source
 									srcset="
@@ -371,17 +390,20 @@
 									"
 									type="image/jpg"
 									media="(max-width: 1199px)"
+									sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
 								/>
 
 								<source
 									srcset="./images/shevchenko-540.webp 540w, ./images/shevchenko-810.webp 810w"
 									type="image/webp"
 									media="(min-width: 1200px)"
+									sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
 								/>
 								<source
 									srcset="./images/shevchenko-540.jpg 540w, ./images/shevchenko-810.jpg 810w"
 									type="image/jpg"
 									media="(min-width: 1200px)"
+									sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
 								/>
 
 								<img
@@ -441,6 +463,7 @@
 									"
 									type="image/webp"
 									media="(max-width: 1199px)"
+									sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
 								/>
 								<source
 									srcset="
@@ -450,17 +473,20 @@
 									"
 									type="image/jpg"
 									media="(max-width: 1199px)"
+									sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
 								/>
 
 								<source
 									srcset="./images/nikolaev-540.webp 540w, ./images/nikolaev-810.webp 810w"
 									type="image/webp"
 									media="(min-width: 1200px)"
+									sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
 								/>
 								<source
 									srcset="./images/nikolaev-540.jpg 540w, ./images/nikolaev-810.jpg 810w"
 									type="image/jpg"
 									media="(min-width: 1200px)"
+									sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
 								/>
 
 								<img
@@ -714,6 +740,7 @@
 			})();
 		</script>
 
+		<script src="./js/menu.js"></script>
 		<script src="./js/modal.js"></script>
 	</body>
 </html>

@@ -1,25 +1,79 @@
-.nav {
-	@include flex(flex-start, stretch);
+.nav-button {
+	@media screen and (max-width: 767px) {
+		@include flex(center, center);
+		margin: 0;
+		padding: 0;
+		border: none;
+		background-color: transparent;
 
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
-	color: $secondaryTextColor;
+		& .icon-menu-close {
+			display: none;
+		}
+		&.is-open .icon-menu-close {
+			display: block;
+		}
+		&.is-open .icon-menu {
+			display: none;
+		}
+
+		&:hover,
+		&:focus {
+			outline: 1px solid $accentBlueColor;
+		}
+
+		&:hover .nav-icon,
+		&:focus .nav-icon {
+			fill: $accentBlueColor;
+		}
+	}
 }
 
-.nav-item:not(:last-child) {
-	margin-right: 50px;
+.nav-icon {
+	@media screen and (max-width: 767px) {
+		fill: $secondaryTextColor;
+		transition: fill $transition;
+	}
+}
+
+// .nav-list {
+// 	// @media screen and (max-width: 767px) {
+// 	// 	display: none;
+// 	// }
+// }
+
+.nav-menu {
+	@media screen and (max-width: 767px) {
+		display: none;
+
+		position: absolute;
+		transform: translateY(60px);
+		top: 0;
+		left: 0;
+		padding: 60px;
+		text-align: center;
+		width: 100%;
+		min-height: 450px;
+
+		background-color: $accentWhiteColor;
+		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 4px 8px rgba(0, 0, 0, 0.04);
+	}
+
+	&.is-open {
+		display: block;
+	}
 }
 
 .nave-page {
-	display: block;
-	padding-top: 32px;
-	padding-bottom: 32px;
+	@media screen and (max-width: 767px) {
+		display: inline-block;
+		font-size: 18px;
+		line-height: 1.17;
+		font-weight: 500;
+		letter-spacing: 0.02em;
+		color: $secondaryTextColor;
 
-	color: $secondaryTextColor;
-
-	transition: color $transition, outline $transition;
+		transition: color $transition, outline $transition;
+	}
 
 	&:hover,
 	&:focus {
@@ -32,17 +86,31 @@
 }
 
 .current {
-	position: relative;
-	color: $accentBlueColor;
+	@media screen and (max-width: 767px) {
+		position: relative;
+		color: $accentBlueColor;
 
-	&::after {
-		position: absolute;
-		bottom: 0;
-		content: "";
-		display: block;
-		width: 100%;
-		height: 4px;
-		background-color: $accentBlueColor;
-		border-radius: 2px;
+		&::after {
+			position: absolute;
+			bottom: -50%;
+			content: "";
+			display: block;
+			width: 100%;
+			height: 4px;
+			background-color: $accentBlueColor;
+			border-radius: 2px;
+		}
+	}
+}
+
+.nav-item {
+	&:first-child {
+		margin-bottom: 52px;
+	}
+	&:nth-child(2) {
+		margin-bottom: 40px;
+	}
+	&:nth-child(3) {
+		margin-bottom: 60px;
 	}
 }

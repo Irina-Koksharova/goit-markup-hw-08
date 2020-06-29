@@ -1,4 +1,16 @@
+.header {
+	@media screen and (max-width: 767px) {
+		position: relative;
+		// border-bottom: 1px solid $borderExamples;
+	}
+}
+
 .header-flex {
-	@include flex(flex-start, stretch);
-	min-height: 80px;
+	@media screen and (max-width: 767px) {
+		@include flex(space-between, center);
+		min-height: 60px;
+	}
+
+	// @include flex(flex-start, stretch);
+	// min-height: 80px;
 }
