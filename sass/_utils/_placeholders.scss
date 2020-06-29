@@ -1,6 +1,6 @@
 %headerMobile {
 	font-weight: 700;
-	font-size: 28px;
+
 	line-height: 1.17;
 	text-align: center;
 }
@@ -17,10 +17,10 @@
 	padding-bottom: 60px;
 }
 
-// %sectionPaddings {
-// 	padding-top: 94px;
-// 	padding-bottom: 94px;
-// }
+%sectionPaddings {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
 
 %button {
 	min-width: 200px;
