@@ -1,3 +1,15 @@
+.social-block {
+	@media screen and (min-width: 768px) {
+		width: calc(50%);
+		text-align: center;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: calc(25%);
+		text-align: start;
+	}
+}
+
 .invoke {
 	display: block;
 	margin-bottom: 20px;
@@ -11,6 +23,11 @@
 .direction {
 	@include flex(center, stretch);
 	margin-bottom: 60px;
+
+	@media screen and (min-width: 1200px) {
+		@include flex(flex-start, stretch);
+		margin-bottom: 0;
+	}
 }
 
 .direction-links {
