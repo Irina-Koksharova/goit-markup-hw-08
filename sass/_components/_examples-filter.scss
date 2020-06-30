@@ -2,6 +2,11 @@
 	border-top: $borderExamples;
 
 	@extend %sectionPaddingsMobile;
+
+	@media screen and (min-width: 1200px) {
+		padding-top: 94px;
+		padding-bottom: 94px;
+	}
 }
 
 .examples {
@@ -9,16 +14,28 @@
 }
 
 .filter {
-	@include flex(flex-start, center);
-	flex-wrap: wrap;
-	margin-bottom: 40px;
+	@media screen and (max-width: 767px) {
+		@include flex(flex-start, center);
+		flex-wrap: wrap;
+		margin-bottom: 40px;
+	}
+	@media screen and (min-width: 768px) {
+		@include flex(center, center);
+		flex-wrap: wrap;
+		margin-bottom: 30px;
+	}
+	@media screen and (min-width: 1200px) {
+		margin-bottom: 50px;
+	}
 }
 
 .filter-item {
-	margin-bottom: 15px;
-
 	&:not(:last-child) {
 		margin-right: 8px;
+	}
+
+	@media screen and (max-width: 767px) {
+		margin-bottom: 15px;
 	}
 }
 
