@@ -19,13 +19,19 @@
 		<!--Шапка сайта-->
 		<header>
 			<div class="container header-flex">
-				<a class="logo-header" href="./">
+				<a class="logo-header" href="./" aria-label="Ссылка на логотип компании">
 					<span class="logo-parth-one">Web</span>
 					<span class="logo-parth-two">Studio</span>
 				</a>
 
 				<nav class="nav">
-					<button class="nav-button is-open" type="button" data-menu-button>
+					<button
+						class="nav-button is-open"
+						type="button"
+						aria-expanded="false"
+						aria-controls="menu-container"
+						data-menu-button
+					>
 						<svg class="nav-icon" aria-label="Переключатель мобильного меню" width="40px" height="40px">
 							<use class="icon-menu" href="./images/symbol-defs.svg#icon-menu"></use>
 							<use class="icon-menu-close" href="./images/symbol-defs.svg#icon-menu-close"></use>
@@ -34,18 +40,24 @@
 					<div class="nav-menu is-open" data-menu>
 						<ul class="nav-list">
 							<li class="nav-item">
-								<a class="nave-page current" href="./index.html">Студия</a>
+								<a class="nave-page current" href="./index.html" aria-label="Ссылка на главную страницу компании">
+									Студия
+								</a>
 							</li>
 							<li class="nav-item">
-								<a class="nave-page" href="./portfolio.html">Портфолио</a>
+								<a class="nave-page" href="./portfolio.html" aria-label="Ссылка на портфолио компании">Портфолио</a>
 							</li>
 							<li class="nav-item">
-								<a class="nave-page" href="">Контакты</a>
+								<a class="nave-page" href="" aria-label="Ссылка на контакты компании">Контакты</a>
 							</li>
 						</ul>
 						<ul class="contacts">
 							<li class="contacts-item">
-								<a class="contacts-link" href="mailto:info@devstudio.com">
+								<a
+									class="contacts-link"
+									href="mailto:info@devstudio.com"
+									aria-label="Ссылка на электронный адрес компании"
+								>
 									<svg class="contacts-image" width="16px" height="12px">
 										<use href="./images/symbol-defs.svg#icon-mailto"></use>
 									</svg>
@@ -53,7 +65,7 @@
 								</a>
 							</li>
 							<li class="contacts-item">
-								<a class="contacts-link" href="tel:+380961111111">
+								<a class="contacts-link" href="tel:+380961111111" aria-label="Ссылка на телефон компании">
 									<svg class="contacts-image" width="10px" height="15px">
 										<use href="./images/symbol-defs.svg#icon-telephone"></use>
 									</svg>
@@ -75,7 +87,7 @@
 						<br />
 						для вашего бизнеса
 					</h1>
-					<button class="hero-button" data-modal-open>Заказать услугу</button>
+					<button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
 				</div>
 			</section>
 
@@ -85,7 +97,7 @@
 					<h2 class="benefits-title">Наши преимущества</h2>
 					<ul class="benefits-flex">
 						<li class="benefits-box">
-							<a class="benefits-link" href="">
+							<a class="benefits-link" href="" aria-label="Ссылка на секцию Преимущества">
 								<svg class="benefits-image" width="70" height="70">
 									<use href="./images/symbol-defs.svg#icon-foto-one"></use>
 								</svg>
@@ -97,7 +109,7 @@
 						</li>
 
 						<li class="benefits-box">
-							<a class="benefits-link" href="">
+							<a class="benefits-link" href="" aria-label="Ссылка на секцию Преимущества">
 								<svg class="benefits-image" width="70" height="70">
 									<use href="./images/symbol-defs.svg#icon-foto-two"></use>
 								</svg>
@@ -109,7 +121,7 @@
 						</li>
 
 						<li class="benefits-box">
-							<a class="benefits-link" href="">
+							<a class="benefits-link" href="" aria-label="Ссылка на секцию Преимущества">
 								<svg class="benefits-image" width="70" height="70">
 									<use href="./images/symbol-defs.svg#icon-foto-three"></use>
 								</svg>
@@ -121,7 +133,7 @@
 						</li>
 
 						<li class="benefits-box">
-							<a class="benefits-link" href="">
+							<a class="benefits-link" href="" aria-label="Ссылка на секцию Преимущества">
 								<svg class="benefits-image" width="70" height="70">
 									<use href="./images/symbol-defs.svg#icon-foto-four"></use>
 								</svg>
@@ -545,7 +557,7 @@
 					<h2 class="clients">Постоянные клиенты</h2>
 					<ul class="clients-flex">
 						<li class="clients-item">
-							<a class="link-item" href="" target="_blank">
+							<a class="link-item" href="" target="_blank" aria-label="Ссылка на логотип клиента">
 								<svg class="clients-logo" width="45px" height="50px">
 									<use href="./images/symbol-defs.svg#icon-logo-1"></use>
 								</svg>
@@ -553,7 +565,7 @@
 						</li>
 
 						<li class="clients-item">
-							<a class="link-item" href="" target="_blank">
+							<a class="link-item" href="" target="_blank" aria-label="Ссылка на логотип клиента">
 								<svg class="clients-logo" width="40px" height="52px">
 									<use href="./images/symbol-defs.svg#icon-logo-2"></use>
 								</svg>
@@ -561,7 +573,7 @@
 						</li>
 
 						<li class="clients-item">
-							<a class="link-item" href="" target="_blank">
+							<a class="link-item" href="" target="_blank" aria-label="Ссылка на логотип клиента">
 								<svg class="clients-logo" width="41px" height="43px">
 									<use href="./images/symbol-defs.svg#icon-logo-3"></use>
 								</svg>
@@ -569,7 +581,7 @@
 						</li>
 
 						<li class="clients-item">
-							<a class="link-item" href="" target="_blank">
+							<a class="link-item" href="" target="_blank" aria-label="Ссылка на логотип клиента">
 								<svg class="clients-logo" width="80px" height="42px">
 									<use href="./images/symbol-defs.svg#icon-logo-4"></use>
 								</svg>
@@ -577,7 +589,7 @@
 						</li>
 
 						<li class="clients-item">
-							<a class="link-item" href="" target="_blank">
+							<a class="link-item" href="" target="_blank" aria-label="Ссылка на логотип клиента">
 								<svg class="clients-logo" width="59px" height="47px">
 									<use href="./images/symbol-defs.svg#icon-logo-5"></use>
 								</svg>
@@ -585,7 +597,7 @@
 						</li>
 
 						<li class="clients-item">
-							<a class="link-item" href="" target="_blank">
+							<a class="link-item" href="" target="_blank" aria-label="Ссылка на логотип клиента">
 								<svg class="clients-logo" width="88px" height="45px">
 									<use href="./images/symbol-defs.svg#icon-logo-6"></use>
 								</svg>
@@ -600,21 +612,29 @@
 		<footer class="footer">
 			<div class="container footer-flex">
 				<div class="adress-block">
-					<a class="logo-footer" href="./">
+					<a class="logo-footer" href="./" aria-label="Ссылка на логотип компании">
 						<span class="logo-parth-one">Web</span>
 						<span class="logo-parth-three">Studio</span>
 					</a>
 					<address class="adress">
 						<ul>
 							<li class="adress-item">
-								<a class="adress-link" href="">г. Киев, пр-т Леси Украинки, 26</a>
+								<a class="adress-link" href="" aria-label="Ссылка на адрес компании">г. Киев, пр-т Леси Украинки, 26</a>
 							</li>
 
 							<li class="adress-item">
-								<a class="adress-link footer-contacts" href="mailto:info@example.com">info@example.com</a>
+								<a
+									class="adress-link footer-contacts"
+									href="mailto:info@example.com"
+									aria-label="Ссылка на электронную почту компании"
+								>
+									info@example.com
+								</a>
 							</li>
 							<li class="adress-item">
-								<a class="adress-link footer-contacts" href="tel:+380991111111">+38 099 111 11 11</a>
+								<a class="adress-link footer-contacts" href="tel:+380991111111" aria-label="Ссылка на телефон компании">
+									+38 099 111 11 11
+								</a>
 							</li>
 						</ul>
 					</address>
@@ -673,7 +693,7 @@
 
 		<div class="backdrop is-hidden" data-modal>
 			<form class="backdrop-modal">
-				<button class="backdrop-button-close" data-modal-close>
+				<button class="backdrop-button-close" type="button" data-modal-close>
 					<svg class="backdrop-close" width="11px" height="11px">
 						<use href="./images/symbol-defs.svg#icon-close"></use>
 					</svg>
@@ -720,10 +740,10 @@
 						<input class="backdrop-check" type="checkbox" name="agreement" id="agreement" />
 						<label class="backdrop-label-check" for="agreement">
 							Соглашаюсь с рассылкой и принимаю
-							<a class="backdrop-link" href="" target="_blank">Условия договора</a>
+							<a class="backdrop-link" href="" target="_blank" aria-label="Ссылка на договор">Условия договора</a>
 						</label>
 					</div>
-					<button class="backdrop-button">Отправить</button>
+					<button class="backdrop-button" type="submit">Отправить</button>
 				</div>
 			</form>
 		</div>
