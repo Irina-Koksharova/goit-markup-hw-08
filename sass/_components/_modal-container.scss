@@ -6,12 +6,19 @@
 	margin-top: 0;
 	margin-bottom: 30px;
 
-	font-size: 20px;
 	font-weight: 700;
-	line-height: 1.15;
 	left: $letterSpacing;
 	color: $secondaryTextColor;
 	text-align: center;
+
+	@media screen and (max-width: 1199px) {
+		font-size: 20px;
+		line-height: 1.5;
+	}
+	@media screen and (min-width: 1200px) {
+		font-size: 20px;
+		line-height: 1.15;
+	}
 }
 
 .modal-item {
