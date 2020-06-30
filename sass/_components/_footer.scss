@@ -1,5 +1,5 @@
 .footer {
-	@extend %sectionPaddingsMobile;
+	@include paddings(60px, 60px);
 	background-color: $footerBackgroundColor;
 }
 

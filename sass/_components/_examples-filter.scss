@@ -1,11 +1,12 @@
 .section-examples {
 	border-top: $borderExamples;
 
-	@extend %sectionPaddingsMobile;
+	@media screen and (max-width: 1199px) {
+		@include paddings(60px, 60px);
+	}
 
 	@media screen and (min-width: 1200px) {
-		padding-top: 94px;
-		padding-bottom: 94px;
+		@include paddings(94px, 94px);
 	}
 }
 
@@ -17,6 +18,7 @@
 	@media screen and (max-width: 767px) {
 		@include flex(flex-start, center);
 		flex-wrap: wrap;
+
 		margin-bottom: 40px;
 	}
 	@media screen and (min-width: 768px) {
@@ -36,6 +38,10 @@
 
 	@media screen and (max-width: 767px) {
 		margin-bottom: 15px;
+
+		&:nth-last-child(-n + 2) {
+			margin-bottom: 0;
+		}
 	}
 }
 
@@ -47,9 +53,11 @@
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 1.63;
+	letter-spacing: 0.03em;
 	color: $secondaryTextColor;
 	background-color: $benefitsBackgroundColor;
 	border-radius: $borderRadius;
+	cursor: pointer;
 
 	transition: color $transition, background-color $transition, box-shadow $transition, outline $transition;
 

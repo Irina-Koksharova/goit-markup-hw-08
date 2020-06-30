@@ -44,6 +44,9 @@
 
 	transition: border $transition;
 
+	&:hover {
+		border: 1px solid $accentWhiteColor;
+	}
 	&:focus {
 		border: 1px solid $accentWhiteColor;
 	}
@@ -58,6 +61,7 @@
 	@include flex(flex-start, center);
 
 	padding: 10px 28px 10px 29px;
+	cursor: pointer;
 
 	@extend %button;
 
@@ -71,7 +75,6 @@
 	&:hover {
 		@extend %button-hover;
 	}
-
 	&:focus {
 		outline: $focusOutlineWhite;
 	}

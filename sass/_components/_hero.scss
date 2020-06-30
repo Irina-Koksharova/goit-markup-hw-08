@@ -90,6 +90,7 @@
 	padding: 10px 32px;
 
 	@extend %button;
+	cursor: pointer;
 
 	transition: background-color $transition, border $transition, outline $transition;
 

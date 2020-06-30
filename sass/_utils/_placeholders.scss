@@ -12,16 +12,6 @@
 	text-align: center;
 }
 
-%sectionPaddingsMobile {
-	padding-top: 60px;
-	padding-bottom: 60px;
-}
-
-%sectionPaddings {
-	padding-top: 94px;
-	padding-bottom: 94px;
-}
-
 %button {
 	min-width: 200px;
 
@@ -54,7 +44,8 @@
 }
 
 %titleTransperent {
-	margin-bottom: 0;
 	position: absolute;
-	color: transparent;
+	opacity: 0;
+	transform: translateY(-100%);
+	margin: 0;
 }

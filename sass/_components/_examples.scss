@@ -6,14 +6,13 @@
 }
 
 .examples-item {
+	border: $borderExamples;
+
 	@media screen and (max-width: 1199px) {
 		&:not(:last-child) {
 			margin-bottom: 30px;
 		}
 	}
-
-	border: $borderExamples;
-
 	@media screen and (min-width: 768px) {
 		width: calc((100% - 30px) / 2);
 
@@ -23,7 +22,6 @@
 	}
 	@media screen and (min-width: 1200px) {
 		width: calc((100% - 2 * 30px) / 3);
-
 		margin-right: 30px;
 
 		&:nth-child(3n) {
@@ -64,16 +62,22 @@
 	height: 100%;
 
 	margin: 0;
-	padding: 77px 24px;
 
 	font-size: 18px;
-	line-height: 1.39;
+	line-height: 1.56;
 	color: $accentWhiteColor;
 	background-color: $accentBlueColor;
 
 	opacity: 0.9;
 	transform: translateY(0);
 	transition: transform $transition;
+
+	@media screen and (max-width: 1199px) {
+		padding: 77px 24px;
+	}
+	@media screen and (min-width: 1200px) {
+		padding: 63px 24px;
+	}
 }
 
 .examples-section {

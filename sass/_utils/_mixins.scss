@@ -3,3 +3,8 @@
 	justify-content: $justify-content;
 	align-items: $align-items;
 }
+
+@mixin paddings($top, $bottom) {
+	padding-top: $top;
+	padding-bottom: $bottom;
+}

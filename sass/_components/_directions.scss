@@ -1,6 +1,5 @@
 .directions {
-	padding-top: 34px;
-	padding-bottom: 94px;
+	@include paddings(0px, 94px);
 
 	@media screen and (max-width: 1200px) {
 		display: none;

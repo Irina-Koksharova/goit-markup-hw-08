@@ -1,5 +1,10 @@
 .benefits {
-	@extend %sectionPaddingsMobile;
+	@media screen and (max-width: 1199px) {
+		@include paddings(60px, 60px);
+	}
+	@media screen and (min-width: 1200px) {
+		@include paddings(94px, 94px);
+	}
 }
 
 .benefits-title {
@@ -27,7 +32,6 @@
 		&:nth-child(2n) {
 			margin-right: 0px;
 		}
-
 		&:nth-last-child(-n + 2) {
 			margin-bottom: 0px;
 		}
@@ -63,6 +67,7 @@
 .benefits-subtitle {
 	margin-bottom: 10px;
 
+	font-size: 14px;
 	font-weight: 700;
 	line-height: 1.14;
 	text-transform: uppercase;
